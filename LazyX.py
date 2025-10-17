@@ -135,7 +135,7 @@ class LazyXTicketBot(commands.Bot):
         
         activity = discord.Activity(
             type=discord.ActivityType.watching,
-            name="&help | LazyX Support"
+            name="Vintage | Support Team"
         )
         await self.change_presence(activity=activity, status=discord.Status.online)
     
