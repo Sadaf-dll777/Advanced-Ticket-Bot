@@ -275,7 +275,7 @@ def create_review_post_embed(review_data: dict, user: discord.Member) -> discord
         )
     
     embed.set_author(name=user.display_name, icon_url=user.display_avatar.url)
-    embed.set_footer(text="Customer Review • LazyX Support")
+    embed.set_footer(text="Customer Review • Vintage Support")
     return embed
 
 def create_setup_embed(title: str, description: str) -> discord.Embed:
