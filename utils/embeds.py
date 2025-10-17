@@ -16,7 +16,7 @@ def create_preview_embed(panel_data: dict) -> discord.Embed:
     if panel_data.get('thumbnail'):
         embed.set_thumbnail(url=panel_data['thumbnail'])
     
-    embed.set_footer(text="LazyX Ticket System")
+    embed.set_footer(text="Vintage Ticket System")
     return embed
 
 def create_ticket_embed(user: discord.Member, ticket_data: dict) -> discord.Embed:
