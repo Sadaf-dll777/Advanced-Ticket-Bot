@@ -55,7 +55,7 @@ def create_ticket_embed(user: discord.Member, ticket_data: dict) -> discord.Embe
     
     # Set footer with ticket number
     embed.set_footer(
-        text=f"LazyX Devs Support System • Ticket Management | {datetime.utcnow().strftime('%m/%d/%Y %I:%M %p')}"
+        text=f"Sadaf dev Support System • Ticket Management | {datetime.utcnow().strftime('%m/%d/%Y %I:%M %p')}"
     )
     
     embed.set_image(url=TICKET_EMBED_IMAGE)
@@ -96,7 +96,7 @@ def create_info_embed(title: str, message: str) -> discord.Embed:
         timestamp=datetime.utcnow()
     )
     
-    embed.set_footer(text="LazyX Ticket System")
+    embed.set_footer(text="Vintage Ticket System")
     return embed
 
 def create_log_embed(title: str, fields: dict, color: int = None) -> discord.Embed:
@@ -109,7 +109,7 @@ def create_log_embed(title: str, fields: dict, color: int = None) -> discord.Emb
     for name, value in fields.items():
         embed.add_field(name=name, value=value, inline=True)
     
-    embed.set_footer(text="LazyX Support Logs")
+    embed.set_footer(text="Vintage Support Logs")
     return embed
 
 def create_closing_embed() -> discord.Embed:
@@ -135,7 +135,7 @@ def create_claim_embed(claimer: discord.Member) -> discord.Embed:
     )
     
     embed.set_author(name=claimer.display_name, icon_url=claimer.display_avatar.url)
-    embed.set_footer(text="LazyX Support")
+    embed.set_footer(text="Vintage Support")
     return embed
 
 def create_priority_change_embed(old_priority: str, new_priority: str) -> discord.Embed:
@@ -172,7 +172,7 @@ def create_lock_embed(user: discord.Member, locked: bool) -> discord.Embed:
             timestamp=datetime.utcnow()
         )
     
-    embed.set_footer(text="LazyX Support")
+    embed.set_footer(text="Vintage Support")
     return embed
 
 def create_user_action_embed(action: str, user: discord.Member, target: discord.Member) -> discord.Embed:
@@ -233,7 +233,7 @@ def create_review_submitted_embed() -> discord.Embed:
         timestamp=datetime.utcnow()
     )
     
-    embed.set_footer(text="LazyX Support Team")
+    embed.set_footer(text="Vintage Support Team")
     return embed
 
 def create_review_post_embed(review_data: dict, user: discord.Member) -> discord.Embed:
