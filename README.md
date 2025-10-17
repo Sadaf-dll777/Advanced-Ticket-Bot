@@ -1,4 +1,4 @@
-# 🎫 LazyX Ticket Bot
+# 🎫 SADAF Ticket Bot
 
 A powerful Discord ticket management system with modern UI and advanced features.
 
@@ -101,7 +101,7 @@ Priority Button   - Change priority (Staff)
 ## 📁 Project Structure
 
 ```
-LazyX-Ticket-Bot/
+Sadaf-Ticket-Bot/
 ├── bot.py
 ├── config.py
 ├── requirements.txt
@@ -153,12 +153,6 @@ COLORS = {
 ### 📹 Video Content Creators
 
 **If you're making a video/tutorial about this bot, CREDITS ARE MANDATORY!**
-
-You **MUST** include:
-- ✅ **Bot Name:** LazyX Ticket Bot
-- ✅ **Developer:** LazyX Development
-- ✅ **GitHub Link:** [Github](https://github.com/Azhaan4130/Advanced-Ticket-Bot.git)
-- ✅ **Discord:** [Discord](https://discord.gg/rzB3GcWmtx)
 
 ### ✅ Acceptable Use
 - ✓ Use in your Discord server
