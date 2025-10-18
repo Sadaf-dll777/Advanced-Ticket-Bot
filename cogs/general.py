@@ -70,34 +70,10 @@ class General(commands.Cog):
         else:
             await ctx.response.send_message(embed=embed, ephemeral=True)
 
-    # INVITE
-    @commands.hybrid_command(name="invite", description="Get bot invite link")
-    async def invite(self, ctx: commands.Context):
-        invite_url = f"https://discord.com/api/oauth2/authorize?client_id={self.bot.user.id}&permissions=8&scope=bot%20applications.commands"
-
-        embed = discord.Embed(
-            title=f"{EMOJIS['ticket']} Invite LazyX Ticket Bot",
-            description=f"Add **{self.bot.user.name}** to your server!\n"
-                        f"Click the button below to invite me to your server.\n",
-            color=COLORS['dark'],
-            timestamp=datetime.utcnow()
-        )
-
-        embed.set_thumbnail(url=self.bot.user.display_avatar.url)
-        embed.set_footer(text="Thank you for using LazyX!")
-
-        view = discord.ui.View()
-        view.add_item(discord.ui.Button(label="Invite Bot", url=invite_url, emoji=EMOJIS['ticket']))
-
-        if isinstance(ctx, commands.Context):
-            await ctx.send(embed=embed, view=view)
-        else:
-            await ctx.response.send_message(embed=embed, view=view, ephemeral=True)
-
     # SUPPORT
     @commands.hybrid_command(name="support", description="Get support server link")
     async def support(self, ctx: commands.Context):
-        support_url = "https://discord.gg/rzB3GcWmtx"
+        support_url = "https://discord.gg/ZNmUY3S6P7"
 
         embed = discord.Embed(
             title=f"{EMOJIS['bell']} Support Server",
