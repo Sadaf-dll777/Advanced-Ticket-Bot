@@ -144,7 +144,7 @@ class BotInfo(commands.Cog):
             value=f"**Name:** {self.bot.user.name}\n"
                   f"**ID:** `{self.bot.user.id}`\n"
                   f"**Created:** <t:{int(self.bot.user.created_at.timestamp())}:R>\n"
-                  f"**Developer:** LazyX Development\n",
+                  f"**Developer:** Sadaf Development\n",
             inline=False
         )
         
