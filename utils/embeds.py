@@ -220,7 +220,7 @@ def create_review_request_embed(ticket_data: dict) -> discord.Embed:
         inline=False
     )
     
-    embed.set_footer(text="Your feedback matters! • LazyX Support")
+    embed.set_footer(text="Your feedback matters! • Vintage Support")
     return embed
 
 def create_review_submitted_embed() -> discord.Embed:
