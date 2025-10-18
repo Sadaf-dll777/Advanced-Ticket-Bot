@@ -51,7 +51,7 @@ OWNER_ID = your_discord_id
 
 **5. Run the bot**
 ```
-python LazyX.py
+python Sadaf.py
 ```
 
 ---
