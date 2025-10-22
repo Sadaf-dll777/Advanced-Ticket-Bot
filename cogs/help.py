@@ -231,7 +231,7 @@ class Help(commands.Cog):
         # Create main embed
         embed = discord.Embed(
             title=f"{EMOJIS['ticket']} Vintage Ticket Help Menu",
-            description=f"**LazyX Ticket is the only ticketing bot you'll ever need!**\n"
+            description=f"**Vintage Ticket is the only ticketing bot you'll ever need!**\n"
                        f"Explore its features and set the best ticket system for your server!\n\n"
                        f"<:gear_icons:1424969532275163207> **Commands** - Browse through commands list\n\n"
                        f"<:icon_chat:1425507996473233602> **FAQ** - Solutions for frequent questions\n\n"
