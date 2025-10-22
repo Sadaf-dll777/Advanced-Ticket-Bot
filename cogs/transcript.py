@@ -13,7 +13,7 @@ class Transcript(commands.Cog):
             transcript = await chat_exporter.export(
                 channel,
                 limit=None,
-                tz_info="Asia/Kolkata",
+                tz_info="Asia/Dhaka",
                 military_time=False,
                 bot=self.bot
             )
