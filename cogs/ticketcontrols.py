@@ -65,7 +65,7 @@ class PrioritySelect(ui.Select):
                 color=COLORS['red'],
                 timestamp=discord.utils.utcnow()
             )
-            error_embed.set_footer(text="LazyX Support System", icon_url=interaction.user.display_avatar.url)
+            error_embed.set_footer(text="Vintage Support System", icon_url=interaction.user.display_avatar.url)
             return await interaction.response.send_message(embed=error_embed, ephemeral=True)
         
         priority = self.values[0]
@@ -116,7 +116,7 @@ class CloseConfirmView(ui.View):
             color=COLORS['red'],
             timestamp=discord.utils.utcnow()
         )
-        closing_embed.set_footer(text="LazyX Support System", icon_url=interaction.guild.icon.url if interaction.guild.icon else None)
+        closing_embed.set_footer(text="Vintage Support System", icon_url=interaction.guild.icon.url if interaction.guild.icon else None)
         
         await interaction.response.edit_message(embed=closing_embed, view=None)
         
@@ -172,7 +172,7 @@ class CloseConfirmView(ui.View):
             color=COLORS['dark'],
             timestamp=discord.utils.utcnow()
         )
-        cancel_embed.set_footer(text="LazyX Support")
+        cancel_embed.set_footer(text="Vintage Support")
         
         await interaction.response.edit_message(embed=cancel_embed, view=None)
 
@@ -199,7 +199,7 @@ class TicketControlView(ui.View):
                 color=COLORS['red'],
                 timestamp=discord.utils.utcnow()
             )
-            error_embed.set_footer(text="LazyX Support System", icon_url=interaction.user.display_avatar.url)
+            error_embed.set_footer(text="Vintage Support System", icon_url=interaction.user.display_avatar.url)
             return await interaction.response.send_message(embed=error_embed, ephemeral=True)
         
         confirm_embed = discord.Embed(
@@ -239,7 +239,7 @@ class TicketControlView(ui.View):
                 color=COLORS['red'],
                 timestamp=discord.utils.utcnow()
             )
-            error_embed.set_footer(text="LazyX Support System", icon_url=interaction.user.display_avatar.url)
+            error_embed.set_footer(text="Vintage Support System", icon_url=interaction.user.display_avatar.url)
             return await interaction.response.send_message(embed=error_embed, ephemeral=True)
         
         if ticket_data.get('claimed_by'):
@@ -272,7 +272,7 @@ class TicketControlView(ui.View):
                 color=COLORS['red'],
                 timestamp=discord.utils.utcnow()
             )
-            error_embed.set_footer(text="LazyX Support System", icon_url=interaction.user.display_avatar.url)
+            error_embed.set_footer(text="Vintage Support System", icon_url=interaction.user.display_avatar.url)
             return await interaction.response.send_message(embed=error_embed, ephemeral=True)
         
         priority_view = PriorityChangeView(self.bot, self.ticket_id)
