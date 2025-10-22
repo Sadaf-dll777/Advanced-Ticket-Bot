@@ -95,7 +95,7 @@ class HelpCategorySelect(ui.Select):
             inline=False
         )
         
-        embed.set_footer(text=f"Current Prefix: {prefix} • LazyX Development")
+        embed.set_footer(text=f"Current Prefix: {prefix} • Sadaf Development")
         return embed
     
     def create_faq_embed(self, prefix):
@@ -152,7 +152,7 @@ class HelpCategorySelect(ui.Select):
         """Create setup guide embed"""
         embed = discord.Embed(
             title="<:icon_staff:1425508129642381443> Setup",
-            description="Follow these steps to setup LazyX Ticket Bot on your server",
+            description="Follow these steps to setup Vintage Ticket Bot on your server",
             color=COLORS['dark'],
             timestamp=datetime.utcnow()
         )
@@ -199,7 +199,7 @@ class HelpView(ui.View):
         # Add Buttons
         invite_url = f"https://discord.com/api/oauth2/authorize?client_id={bot.user.id}&permissions=8&scope=bot%20applications.commands"
         self.add_item(ui.Button(label="Invite Bot", url=invite_url, emoji="<:icon_ticket:1424793495427616909>", style=discord.ButtonStyle.link, row=1))
-        self.add_item(ui.Button(label="Support Server", url="https://discord.gg/rzB3GcWmtx", emoji="<:icon_chat:1425507996473233602> ", style=discord.ButtonStyle.link, row=1))
+        self.add_item(ui.Button(label="Support Server", url="https://discord.gg/ZNmUY3S6P7", emoji="<:icon_chat:1425507996473233602> ", style=discord.ButtonStyle.link, row=1))
     
     async def on_timeout(self):
         """Disable dropdown on timeout"""
@@ -230,7 +230,7 @@ class Help(commands.Cog):
         
         # Create main embed
         embed = discord.Embed(
-            title=f"{EMOJIS['ticket']} LazyX Ticket Help Menu",
+            title=f"{EMOJIS['ticket']} Vintage Ticket Help Menu",
             description=f"**LazyX Ticket is the only ticketing bot you'll ever need!**\n"
                        f"Explore its features and set the best ticket system for your server!\n\n"
                        f"<:gear_icons:1424969532275163207> **Commands** - Browse through commands list\n\n"
